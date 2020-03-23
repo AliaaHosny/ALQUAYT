@@ -8,7 +8,6 @@
         rules: {
             gender: {
                 required: true,
-
             },
             nationality: {
                 required: true,
@@ -18,7 +17,7 @@
                 min: 18,
                 max: 65,
             },
-            Height: {
+            height: {
                 required: true,
                 min: 121,
                 max: 200,
@@ -31,99 +30,84 @@
             fleshcolour: {
                 required: true,
             },
-            JobStatus: {
+            jobStatus: {
                 required: true,
             },
             commitment: {
                 required: true,
             },
-            Tribe: {
+            tribe: {
                 required: true,
             },
             smoking: {
                 required: true,
             },
-            Region: {
+            ///// soicalStatus
+            region: {
                 required: true,
             },
-            Qualification: {
+            qualification: {
                 required: true,
             },
-            Originarea: {
+            originArea: {
                 required: true,
             },
-            marriagetype: {
+            //// LegalView
+            marriageType: {
                 required: true,
             },
-            status: {
-                required: true,
-                number: true,
-            },
-            cvc: {
-                required: true,
-            },
+            /// AcceptOtherNationality
+            /// TalkAboutYourSelf
         },
         messages: {
             gender: {
                 required: "من فضلك اختار النوع",
-
             },
             nationality: {
                 required: "من فضلك اختار الجنسية",
             },
             age: {
-                required: "من فضلك اكتب العمر   ",
-                min: "من فضلك اكتب العمر صحيح ",
-                max: "من فضلك اكتب العمر صحيح ",
+                required: "من فضلك قم بتحديد العمر بشكل صحيح",
+                min: "من فضلك قم بتحديد العمر بشكل صحيح",
+                max: "من فضلك قم بتحديد العمر بشكل صحيح",
             },
-            Height: {
-                required: "من فضلك اكتب الطول   ",
-                min: "من فضلك اكتب الطول صحيح ",
-                max: "من فضلك اكتب الطول صحيح ",
+            height: {
+                required: "من فضلك قم بتحديد العمر بشكل صحيح",
+                min: "من فضلك قم بتحديد الطول بشكل صحيح",
+                max: "من فضلك قم بتحديد الطول بشكل صحيح",
             },
             weight: {
-                required: "من فضلك اكتب الوزن   ",
-                min: "من فضلك اكتب الوزن صحيح ",
-                max: "من فضلك اكتب الوزن صحيح ",
+                required: "من فضلك قم بتحديد الوزن بشكل صحيح",
+                min: "من فضلك قم بتحديد الوزن بشكل صحيح",
+                max: "من فضلك قم بتحديد الوزن بشكل صحيح",
             },
             fleshcolour: {
-                required: "من فضلك اكتب لون البشرة   ",
-
-            }
-            , JobStatus: {
-                required: true,
+                required: "من فضلك اختار لون البشرة ",
+            },
+            jobStatus: {
+                required: "من فضلك اختار نوع الوظيفة",
             },
             commitment: {
-                required: true,
+                required: "من فضلك اختار نوع الوظيفة",
             },
-            Tribe: {
-                required: true,
+            tribe: {
+                required: "من فضلك قم بالاختيار",
             },
             smoking: {
-                required: true,
+                required: "من فضلك قم بالاختيار",
             },
-            Region: {
-                required: true,
+            region: {
+                required: " من فضلك اختار المنطقة ",
             },
-            Qualification: {
-                required: true,
+            qualification: {
+                required: " من فضلك اختار المؤهل ",
             },
-            Originarea: {
-                required: true,
+            originArea: {
+                required: "من فضلك اختار منطقة الاصل",
             },
-            marriagetype: {
-                required: true,
-            },
-            status: {
-                required: true,
-                number: true,
-            },
-
-
-
-
-
-
+            marriageType: {
+                required: "من فضلك اختار نوع الزواج",
+            }
         },
         onfocusout: function (element) {
             $(element).valid();
@@ -193,7 +177,7 @@
         percentag = (((index + 1) / $("#signup-form  fieldset").get().length) * 100).toFixed();
         // console.log(percentag)  
         $("#progress").attr("aria-valuenow", percentag);
-        $("#progress").css("width", percentag);
+        $("#progress").css("width", percentag +"%");
     }
 
 })(jQuery);

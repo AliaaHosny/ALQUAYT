@@ -20,50 +20,50 @@ ul {
 }
 
 /* roboto-slab-300 - latin */
-@font-face {
-  font-family: "Roboto Slab";
+/* @font-face { */
+  /* font-family: "Roboto Slab";
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/roboto-slab/roboto-slab-v7-latin-300.eot");
+  src: url("../fonts/roboto-slab/roboto-slab-v7-latin-300.eot"); */
   /* IE9 Compat Modes */
-  src: local("Roboto Slab Light"), local("RobotoSlab-Light"),
+  /* src: local("Roboto Slab Light"), local("RobotoSlab-Light"),
     url("../fonts/roboto-slab/roboto-slab-v7-latin-300.eot?#iefix") format("embedded-opentype"),
     url("../fonts/roboto-slab/roboto-slab-v7-latin-300.woff2") format("woff2"),
     url("../fonts/roboto-slab/roboto-slab-v7-latin-300.woff") format("woff"),
     url("../fonts/roboto-slab/roboto-slab-v7-latin-300.ttf") format("truetype"),
-    url("../fonts/roboto-slab/roboto-slab-v7-latin-300.svg#RobotoSlab") format("svg");
+    url("../fonts/roboto-slab/roboto-slab-v7-latin-300.svg#RobotoSlab") format("svg"); */
   /* Legacy iOS */
-}
+/* } */
 /* roboto-slab-regular - latin */
-@font-face {
-  font-family: "Roboto Slab";
+/* @font-face { */
+  /* font-family: "Roboto Slab";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/roboto-slab/roboto-slab-v7-latin-regular.eot");
+  src: url("../fonts/roboto-slab/roboto-slab-v7-latin-regular.eot"); */
   /* IE9 Compat Modes */
-  src: local("Roboto Slab Regular"), local("RobotoSlab-Regular"),
-    url("../fonts/roboto-slab/roboto-slab-v7-latin-regular.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/roboto-slab/roboto-slab-v7-latin-regular.woff2") format("woff2"),
-    url("../fonts/roboto-slab/roboto-slab-v7-latin-regular.woff") format("woff"),
-    url("../fonts/roboto-slab/roboto-slab-v7-latin-regular.ttf") format("truetype"),
-    url("../fonts/roboto-slab/roboto-slab-v7-latin-regular.svg#RobotoSlab") format("svg");
+  /* src: local("Roboto Slab Regular"), local("RobotoSlab-Regular"), */
+    /* url("../fonts/roboto-slab/roboto-slab-v7-latin-regular.eot?#iefix") format("embedded-opentype"), */
+    /* url("../fonts/roboto-slab/roboto-slab-v7-latin-regular.woff2") format("woff2"), */
+    /* url("../fonts/roboto-slab/roboto-slab-v7-latin-regular.woff") format("woff"), */
+    /* url("../fonts/roboto-slab/roboto-slab-v7-latin-regular.ttf") format("truetype"), */
+    /* url("../fonts/roboto-slab/roboto-slab-v7-latin-regular.svg#RobotoSlab") format("svg"); */
   /* Legacy iOS */
-}
+/* } */
 /* roboto-slab-700 - latin */
-@font-face {
+/* @font-face {
   font-family: "Roboto Slab";
   font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/roboto-slab/roboto-slab-v7-latin-700.eot");
+  font-weight: 700; */
+  /* src: url("../fonts/roboto-slab/roboto-slab-v7-latin-700.eot"); */
   /* IE9 Compat Modes */
-  src: local("Roboto Slab Bold"), local("RobotoSlab-Bold"),
-    url("../fonts/roboto-slab/roboto-slab-v7-latin-700.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/roboto-slab/roboto-slab-v7-latin-700.woff2") format("woff2"),
-    url("../fonts/roboto-slab/roboto-slab-v7-latin-700.woff") format("woff"),
-    url("../fonts/roboto-slab/roboto-slab-v7-latin-700.ttf") format("truetype"),
-    url("../fonts/roboto-slab/roboto-slab-v7-latin-700.svg#RobotoSlab") format("svg");
+  /* src: local("Roboto Slab Bold"), local("RobotoSlab-Bold"), */
+    /* url("../fonts/roboto-slab/roboto-slab-v7-latin-700.eot?#iefix") format("embedded-opentype"), */
+    /* url("../fonts/roboto-slab/roboto-slab-v7-latin-700.woff2") format("woff2"), */
+    /* url("../fonts/roboto-slab/roboto-slab-v7-latin-700.woff") format("woff"), */
+    /* url("../fonts/roboto-slab/roboto-slab-v7-latin-700.ttf") format("truetype"), */
+    /* url("../fonts/roboto-slab/roboto-slab-v7-latin-700.svg#RobotoSlab") format("svg"); */
   /* Legacy iOS */
-}
+/* } */
 a:focus,
 a:active {
   text-decoration: none;
@@ -120,13 +120,14 @@ input[type="checkbox"] {
 }
 
 .h3 {
-  font-family: "Poppins-Regular";
+  /* font-family: "Poppins-Regular"; */
   color: #fff;
   display: inline-block;
   padding: 5px 20px;
   border-radius: 5px;
   background: #e4bd37;
   margin-top: 35px;
+  font-size: 1.24rem;
 }
 
 body {
@@ -572,9 +573,7 @@ h3 {
   text-align: center;
   transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
-.typeTribeshow {
-  display: none;
-}
+
 .progress {
   margin-top: 20px;
   margin-bottom: 20px;
