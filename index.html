@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="colorlib.com">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css" />
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-12 col-lg-12 text-center logo_">
+                    <img src="images/tEXLA_Z8.png" alt="">
+                </div>
+                <div class="col-xs-12  col-md-12 col-lg-12 text-center">
+
+                    <h3 class="h3 text-center">سجل لتحصل على شريك حياتك ! </h3>
+                    <form method="POST" id="signup-form" class="">
+                        <div class="progress">
+                            <div id="progress" class="progress-bar" role="progressbar" style="width: 25%"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <!-- 0 Gender -->
+                        <h3>
+                        </h3>
+                        <fieldset>
+                            <legend>
+                            </legend>
+                            <div class="form-group">
+                                <label for="commitment" class="form-label required bold">أنا</label>
+                                <div class="form-holder">
+                                    <div class="checkbox-circle">
+                                        <label class="conservative">
+                                            <!-- <i class="fa fa-check fa-2x"></i> -->
+                                            <input type="radio" name="gender" value="1" checked="checked"> رجل
+                                        </label>
+                                        <label class="conservative">
+                                            <input type="radio" name="gender" value="0"> امرأة
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <!-- 1 Nationality -->
+                        <h3>
+                        </h3>
+                        <fieldset>
+                            <legend>
+                            </legend>
+                            <div class="form-group">
+                                <label for="nationality" class="form-label required">الجنسية </label>
+                                <select class="form-control" name="nationality">
+                                    <option value="">- اختار - </option>
+                                    <option value="1">سعودي</option>
+                                    <option value="2">مصري</option>
+                                    <option value="3">سوري</option>
+                                </select>
+                            </div>
+                        </fieldset>
+
+                        <!-- 2 Age -->
+                        <h3>
+                        </h3>
+                        <fieldset>
+                            <legend>
+                            </legend>
+                            <div class="form-group">
+                                <label for="age" class="form-label required">العمر <span id="agevalue"></span></label>
+                                <input type="range" min="17" max="65" value="17" class="slider" id="age" name="age">
+                            </div>
+                        </fieldset>
+
+                        <!-- 3 Height -->
+                        <h3>
+                        </h3>
+                        <fieldset>
+                            <legend>
+                            </legend>
+                            <div class="form-group">
+                                <label for="height" class="form-label required ">الطول <span
+                                        id="heightvalue"></span></label>
+                                <input type="range" min="120" max="200" value="119" class="slider1" id="height"
+                                    name="height">
+                            </div>
+                        </fieldset>
+
+                        <!-- 4 Weight -->
+                        <h3></h3>
+                        </h3>
+                        <fieldset>
+                            <legend>
+                            </legend>
+                            <div class="form-group">
+                                <label for="weight" class="form-label required">الوزن <span id="weightvalue"></span>
+                                </label>
+                                <input type="range" min="40" max="300" value="39" class="slider2" id="weight"
+                                    name="weight">
+                            </div>
+                        </fieldset>
+
+                        <!-- 5 SkinColor -->
+                        <h3>
+                        </h3>
+                        <fieldset>
+                            <div class="form-group">
+                                <label for="fleshcolour" class="form-label required">لون البشرة </label>
+                                <div class="form-holder">
+                                    <div class="checkbox-circle">
+                                        <label class="conservative">
+                                            <input type="radio" name="fleshcolour" value="1"> ابيض
+                                        </label>
+                                        <label class="conservative  ">
+                                            <input type="radio" name="fleshcolour" value="2"> حنطي
+                                        </label>
+                                        <label class="conservative  ">
+                                            <input type="radio" name="fleshcolour" value="2"> حنطي فاتح
+                                        </label>
+                                        <label class="conservative  ">
+                                            <input type="radio" name="fleshcolour" value="2"> أسمر
+                                        </label>
+                                        <label class="conservative  ">
+                                            <input type="radio" name="fleshcolour" value="2"> أسود
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <!-- 6 JobStatus -->
+                        <h3>
+                        </h3>
+                        <fieldset>
+                            <div class="form-group male">
+                                <label for="JobStatus" class="form-label required">الحالة الوظيفة </label>
+                                <div class="form-holder">
+                                    <div class="checkbox-circle">
+                                        <label class="conservative">
+                                            <input type="radio" name="JobStatus" value="1"> موظف مدني
+                                        </label>
+                                        <label class="conservative  ">
+                                            <input type="radio" name="JobStatus" value="2"> عسكري
+                                        </label>
+                                        <label class="conservative  ">
+                                            <input type="radio" name="JobStatus" value="2"> قطاع خاص
+                                        </label>
+                                        <label class="conservative  ">
+                                            <input type="radio" name="JobStatus" value="2"> متقاعد
+                                        </label>
+                                        <label class="conservative  ">
+                                            <input type="radio" name="JobStatus" value="2"> رجل اعمال
+                                        </label>
+                                        <label class="conservative  ">
+                                            <input type="radio" name="JobStatus" value="2">بدو ن وظيفة
+                                        </label>
+                                        <label class="conservative  ">
+                                            <input type="radio" name="JobStatus" value="2">طالب
+                                        </label>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="form-group female">
+                                <label for="JobStatus" class="form-label required">الحالة الوظيفة </label>
+                                <div class="form-holder">
+                                    <div class="checkbox-circle">
+                                        <label class="conservative">
+                                            <input type="radio" name="JobStatus" value="1"> موظف مدني
+                                        </label>
+                                        <label class="conservative  ">
+                                            <input type="radio" name="JobStatus" value="2"> عسكري
+                                        </label>
+                                        <label class="conservative  ">
+                                            <input type="radio" name="JobStatus" value="2"> قطاع خاص
+                                        </label>
+                                        <label class="conservative  ">
+                                            <input type="radio" name="JobStatus" value="2"> متقاعدة
+                                        </label>
+                                        <label class="conservative  ">
+                                            <input type="radio" name="JobStatus" value="2"> سيدة اعمال
+                                        </label>
+                                        <label class="conservative  ">
+                                            <input type="radio" name="JobStatus" value="2">بدو ن وظيفة
+                                        </label>
+                                        <label class="conservative  ">
+                                            <input type="radio" name="JobStatus" value="2">طالبة
+                                        </label>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </fieldset>
+
+                        <!-- 7 Commitment -->
+                        <h3>
+                        </h3>
+                        <fieldset>
+                            <div class="form-group male">
+                                <label for="commitment" class="form-label required  bold">درجة الالتزام </label>
+                                <div class="form-holder">
+                                    <div class="checkbox-circle">
+                                        <label class="Religious   ">
+                                            <input type="radio" name="commitment" value="Religious">
+                                            متدين<br>
+                                        </label>
+                                        <label class="conservative   ">
+                                            <input type="radio" name="commitment" value="conservative"> محافظ<br>
+                                        </label>
+                                        <label class="normal   ">
+                                            <input type="radio" name="commitment" value="normal">عادي<br>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group female">
+                                <label for="commitment" class="form-label required  bold">نوع الحجاب </label>
+                                <div class="form-holder">
+                                    <div class="checkbox-circle">
+                                        <label class="Religious   ">
+                                            <input type="radio" name="commitment" value="Religious">
+                                            محجبه
+                                        </label>
+                                        <label class="conservative   ">
+                                            <input type="radio" name="commitment" value="conservative"> بدون حجاب
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <!-- 8 Tribe -->
+                        <h3>
+                        </h3>
+                        <fieldset>
+                            <label for="Tribe" class="form-label required bold">القبيلة </label>
+                            <div class="checkbox-circle Tribe">
+                                <label class="conservative">
+                                    <input type="radio" id="Tribe" name="Tribe2" value="غير قبلي"> غير قبيلي <br>
+                                </label>
+                                <label class="typeTribe">
+                                    <input type="radio" name="typeTribe" value=" قبلي ينتهي بعائلة">قبلي ينتهي بعائلة
+                                    <br>
+                                </label>
+                                <label class="typeTribe">
+                                    <input type="radio" name="typeTribe" value=" قبلي ينتهي بقبيلة"> قبلي ينتهي بقبيلة
+                                    <br>
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <!-- 8 TribeType -->
+                        <!-- <h3>
+                        </h3>
+                        <fieldset>
+                            <label for="Tribe" class="form-label required bold">القبيلة </label>
+                            <div class="checkbox-circle typeTribeshow">
+                                <label class="typeTribe  ">
+                                    <input type="radio" name="typeTribe" value="ينتهي بعائلة"> ينتهي بعائلة<br>
+                                </label>
+                                <label class="typeTribe typeTribeshow">
+                                    <input type="radio" name="typeTribe" value="ينتهي بقبيلة"> ينتهي بقبيلة <br>
+                                </label>
+                            </div>
+                        </fieldset> -->
+
+
+                        <!-- 9 Smoking -->
+                        <h3>
+                        </h3>
+                        <fieldset>
+                            <div class="form-group ">
+                                <label for="commitment" class="form-label required bold">مدخن </label>
+                                <div class="form-holder">
+                                    <div class="checkbox-circle">
+                                        <label class="smoking">
+                                            <input type="radio" name="smoking" value="نعم"> نعم<br>
+                                        </label>
+                                        <label class="no  ">
+                                            <input type="radio" name="smoking" value="لا"> لا <br>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+
+                        <!-- 10 SoicalStatus -->
+                        <h3>
+                        </h3>
+                        <fieldset>
+
+                            <div class="form-group male">
+                                <label for="status" class="form-label required bold">الحالة الإجتماعيه </label>
+                                <div class="form-holder">
+                                    <div class="checkbox-circle">
+                                        <label class="Religious  ">
+                                            <input type="radio" name="status" value="1"> لم يتزوج
+
+                                        </label>
+                                        <label class="conservative  ">
+                                            <input type="radio" name="status" value="2"> مطلق
+
+                                        </label>
+                                        <label class="conservative  ">
+                                            <input type="radio" name="status" value="3"> ارمل
+
+                                        </label>
+                                        <label class="conservative  ">
+                                            <input type="radio" name="status" value="4"> معدد
+
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group female">
+                                <label for="status" class="form-label required bold">الحالة الإجتماعيه </label>
+                                <div class="form-holder">
+                                    <div class="checkbox-circle">
+                                        <label class="Religious  ">
+                                            <input type="radio" name="status" value="1"> بكر
+
+                                        </label>
+                                        <label class="conservative  ">
+                                            <input type="radio" name="status" value="2"> مطلقة
+
+                                        </label>
+                                        <label class="conservative  ">
+                                            <input type="radio" name="status" value="3"> مطلقة بأولاد
+
+                                        </label>
+                                        <label class="conservative  ">
+                                            <input type="radio" name="status" value="4"> ارملة
+
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <!-- 11 Region -->
+                        <h3>
+                        </h3>
+                        <fieldset>
+                            <div class="form-group">
+                                <label for="Region" class="form-label required">المنطقه</label>
+                                <select class="form-control" name="Region">
+                                    <option value="">- اختار - </option>
+                                    <option value="1">منطقه الرياض</option>
+                                    <option value="2">منطقه مكة</option>
+                                    <option value="3">منطقه القصيم</option>
+                                    <option value="4">المنطقة الشرقية</option>
+                                    <option value="5">منطقه .....</option>
+                                </select>
+                            </div>
+                        </fieldset>
+
+                        <!-- 12 Qualification -->
+                        <h3>
+                        </h3>
+                        <fieldset>
+                            <div class="form-group">
+                                <div class="form-group ">
+                                    <label for="Qualification" class="form-label required bold">المؤهل الدراسى </label>
+                                    <div class="form-holder">
+                                        <div class="checkbox-circle">
+                                            <label class="Religious  ">
+                                                <input type="radio" name="Qualification" value="1"> دكتوراة
+                                            </label>
+                                            <label class="conservative  ">
+                                                <input type="radio" name="Qualification" value="2"> ماجستير
+                                            </label>
+                                            <label class="conservative  ">
+                                                <input type="radio" name="Qualification" value="3"> بكارليوس
+                                            </label>
+                                            <label class="conservative  ">
+                                                <input type="radio" name="Qualification" value="4"> متوسط
+                                            </label>
+                                            <label class="conservative  ">
+                                                <input type="radio" name="Qualification" value="4"> ثانوي
+                                            </label>
+                                            <label class="conservative  ">
+                                                <input type="radio" name="Qualification" value="4"> امي
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <!-- 13 OriginArea -->
+                        <h3>
+                        </h3>
+                        <fieldset>
+
+                            <div class="form-group">
+                                <label for="Originarea" class="form-label required">منطقه الأصل</label>
+                                <select class="form-control" name="Originarea">
+                                    <option value="">- اختار - </option>
+                                    <option value="1">منطقه الرياض</option>
+                                    <option value="2">منطقه مكة</option>
+                                    <option value="3">منطقه القصيم</option>
+                                    <option value="4">المنطقة الشرقية</option>
+                                    <option value="5">منطقه .....</option>
+                                </select>
+                            </div>
+                        </fieldset>
+
+                        <!-- 14 LegalView -->
+                        <h3>
+                        </h3>
+                        <fieldset>
+                            <div class="form-group">
+                                <label for="legalview" class="form-label  bold">يوجد نظره شرعية</label>
+                                <div class="form-holder">
+                                    <div class="checkbox-circle">
+                                        <label class="conservative  ">
+                                            <input type="radio" name="legalview" value="نعم"> نعم
+                                        </label>
+                                        <label class="conservative  ">
+                                            <input type="radio" name="legalview" value="لا"> لا
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <!-- 15 MarriageType -->
+                        <h3>
+                        </h3>
+                        <fieldset>
+                            <div class="form-group">
+                                <label for="marriagetype" class="form-label required bold">نوع الزواج</label>
+                                <div class="form-holder">
+                                    <div class="checkbox-circle">
+                                        <label class="marriagetype  ">
+                                            <input type="radio" name="marriagetype" value="معلن"> معلن
+                                        </label>
+                                        <label class="marriagetype  ">
+                                            <input type="radio" name="marriagetype" value=" غير معلن "> غير معلن
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+
+                        <!-- 16 AcceptOtherNationality  -->
+                        <h3>
+                        </h3>
+                        <fieldset>
+                            <div class="form-group">
+                                <label for="OtherSex" class="form-label  bold">هل تقبل بجنسية أخرى</label>
+                                <div class="form-holder">
+                                    <div class="checkbox-circle">
+                                        <label class="OtherSex  ">
+                                            <input type="radio" name="OtherSex" value="نعم"> نعم
+                                        </label>
+                                        <label class="OtherSex  ">
+                                            <input type="radio" name="OtherSex" value="لا"> لا
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <!-- 17 TalkAboutYourSelf  -->
+                        <h3>
+                        </h3>
+                        <fieldset>
+                            <div class="form-group">
+                                <label for="work_hours" class="form-label male">تحدث عن نفسك</label>
+                                <label for="work_hours" class="form-label female">تحدثي عن نفسك</label>
+                                <textarea class="control-form" name="yourself"></textarea>
+                            </div>
+                        </fieldset>
+
+                        <!-- 18 PartnerCondition-0-Age  -->
+                        <h3>
+                        </h3>
+                        <fieldset>
+                            <legend>
+                                <span class="step-heading">الشروط المطلوبة في الطرف الاخر</span>
+                            </legend>
+                            <div class="form-group">
+                                <label for="age_another" class="form-label required bold">العمر </label>
+                                <div class="form-holder">
+                                    <div class="checkbox-circle">
+                                        <label class="age_another  ">
+                                            <input type="radio" name="age_another" value="معلن"> 18-25
+                                        </label>
+                                        <label class="age_another  ">
+                                            <input type="radio" name="age_another" value=" غير معلن "> 26-35
+                                        </label>
+                                        <label class="age_another  ">
+                                            <input type="radio" name="age_another" value=" غير معلن "> 36-45
+                                        </label>
+                                        <label class="age_another  ">
+                                            <input type="radio" name="age_another" value=" غير معلن "> 46-55
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+
+                        <!-- 19 PartnerCondition-1-SoicalStatus  -->
+                        <h3>
+                        </h3>
+                        <fieldset>
+                            <legend>
+                                <span class="step-heading">الشروط المطلوبة في الطرف الاخر</span>
+                            </legend>
+                            <div class="form-group male">
+                                <label for="status_another" class="form-label required bold">الحالة الإجتماعيه </label>
+                                <div class="form-holder">
+                                    <div class="checkbox-circle">
+                                        <label class="Religious  ">
+                                            <input type="radio" name="status_another" value="1"> بكر
+                                        </label>
+                                        <label class="conservative  ">
+                                            <input type="radio" name="status_another" value="2"> مطلق
+                                        </label>
+                                        <label class="conservative  ">
+                                            <input type="radio" name="status_another" value="3"> ارمل
+                                        </label>
+                                        <label class="conservative  ">
+                                            <input type="radio" name="status_another" value="4"> معدد
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group female">
+                                <label for="status_another" class="form-label required bold">الحالة الإجتماعيه </label>
+                                <div class="form-holder">
+                                    <div class="checkbox-circle">
+                                        <label class="Religious  ">
+                                            <input type="radio" name="status_another" value="1"> لم يتزوج
+                                        </label>
+                                        <label class="conservative  ">
+                                            <input type="radio" name="status_another" value="2"> مطلق
+                                        </label>
+                                        <label class="conservative  ">
+                                            <input type="radio" name="status_another" value="3"> ارمل
+                                        </label>
+                                        <label class="conservative  ">
+                                            <input type="radio" name="status_another" value="4"> معدد
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+
+
+                        <!-- 20 PartnerCondition-2-Weight  -->
+                        <h3>
+                        </h3>
+                        <fieldset>
+                            <legend>
+                                <span class="step-heading">الشروط المطلوبة في الطرف الاخر</span>
+                            </legend>
+                            <div class="form-group female">
+                                <label for="weight_another" class="form-label required bold">الوزن </label>
+                                <div class="form-holder">
+                                    <div class="checkbox-circle">
+                                        <label class="Religious  ">
+                                            <input type="radio" name="weight_another" value="1"> تميل للنحافة
+                                        </label>
+                                        <label class="conservative  ">
+                                            <input type="radio" name="weight_another" value="2"> تميل للبدانة
+                                        </label>
+                                        <label class="conservative  ">
+                                            <input type="radio" name="weight_another" value="3"> رشيقة
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+
+                        <!-- 21 PartnerCondition-3-OriginArea  -->
+                        <h3>
+                        </h3>
+                        <fieldset>
+                            <legend>
+                                <span class="step-heading">الشروط المطلوبة في الطرف الاخر</span>
+                            </legend>
+                            <div class="form-group">
+                                <label for="area_another" class="form-label ">من اي منطقه </label>
+                                <select class="form-control" name="area_another">
+                                    <option value="">غير محدد</option>
+                                    <option value="2">منطقه الرياض</option>
+                                    <option value="2">منطقه مكة</option>
+                                    <option value="3">منطقه القصيم</option>
+                                    <option value="4">المنطقة الشرقية</option>
+                                    <option value="5">منطقه .....</option>
+                                </select>
+                            </div>
+                        </fieldset>
+
+
+                        <!-- 22 PartnerCondition-4-Region  -->
+                        <h3>
+                        </h3>
+                        <fieldset>
+                            <legend>
+                                <span class="step-heading">الشروط المطلوبة في الطرف الاخر</span>
+                            </legend>
+                            <div class="form-group">
+                                <label for="city_another" class="form-label male">المدينة التى تعيش فيها حاليا</label>
+                                <label for="city_another" class="form-label female">المدينة التى تعيش فيها حاليا</label>
+                                <select class="form-control" name="city_another">
+                                    <option>غير محدد</option>
+                                    <option value=""> الرياض</option>
+                                    <option value=""> مكة</option>
+                                    <option value=""> القصيم</option>
+                                    <option value=""> الشرقية</option>
+                                </select>
+                            </div>
+                        </fieldset>
+
+
+                        <!-- 23 PartnerCondition-5-Qualification  -->
+                        <h3>
+                        </h3>
+                        <fieldset>
+                            <legend>
+                                <span class="step-heading">الشروط المطلوبة في الطرف الاخر</span>
+                            </legend>
+                            <div class="form-group ">
+                                <label for="Qualification_another" class="form-label required bold">المؤهل الدراسى
+                                </label>
+                                <div class="form-holder">
+                                    <div class="checkbox-circle">
+                                        <label class="Religious  ">
+                                            <input type="radio" name="Qualification_another" value="1"> دكتوراة
+
+                                        </label>
+                                        <label class="conservative  ">
+                                            <input type="radio" name="Qualification_another" value="2"> ماجستير
+
+                                        </label>
+                                        <label class="conservative  ">
+                                            <input type="radio" name="Qualification_another" value="3"> بكارليوس
+
+                                        </label>
+                                        <label class="conservative  ">
+                                            <input type="radio" name="Qualification_another" value="4"> متوسط
+
+                                        </label>
+                                        <label class="conservative  ">
+                                            <input type="radio" name="Qualification_another" value="4"> ثانوي
+
+                                        </label>
+                                        <label class="conservative  ">
+                                            <input type="radio" name="Qualification_another" value="4"> امي
+
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="vendor/jquery-validation/dist/additional-methods.min.js"></script>
+    <script src="vendor/jquery-steps/jquery.steps.min.js"></script>
+    <!-- <script src="vendor/minimalist-picker/dobpicker.js"></script> -->
+    <script src="js/main.js"></script>
+    <script>
+        var slider = document.getElementById("age");
+        var output = document.getElementById("agevalue");
+        output.innerHTML = slider.value;
+
+        slider.oninput = function () {
+            output.innerHTML = this.value;
+        }
+    </script>
+    <script>
+        var slider1 = document.getElementById("height");
+        var output1 = document.getElementById("heightvalue");
+        output1.innerHTML = slider1.value;
+
+        slider1.oninput = function () {
+            output1.innerHTML = this.value;
+        }
+    </script>
+    <script>
+        var slider2 = document.getElementById("weight");
+        var output2 = document.getElementById("weightvalue");
+        output2.innerHTML = slider2.value;
+
+        slider2.oninput = function () {
+            output2.innerHTML = this.value;
+        }
+    </script>
+
+
+</body>
+
+</html>
